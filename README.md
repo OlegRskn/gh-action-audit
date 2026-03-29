@@ -30,24 +30,31 @@ If an action is compromised, your CI/CD pipeline may be affected.
 
 ## Installation
 
+```bash
 git clone <your-repo-url>
 cd gh-action-audit
 npm install
+```
 
 ---
 
 ## Usage
 
+```bash
 npm start -- owner/repo
+```
 
-Example:
+### Example
 
+```bash
 npm start -- actions/starter-workflows
+```
 
 ---
 
 ## Example output
 
+```text
 Repository: actions/starter-workflows
 Workflows scanned: 9
 Findings: 13
@@ -65,26 +72,31 @@ Job: pre-commit
 Step: (unnamed step)
 Uses: actions/checkout@v4
 Message: Action is not pinned to a full commit SHA
+```
 
 ---
 
 ## Run tests
 
+```bash
 npm test
+```
 
 ---
 
 ## Project structure
 
+```text
 src/
   cli/        CLI entry point
   github/     GitHub API integration
   parser/     YAML parsing
   analyzer/   security analysis
-    rules/    rules
+    rules/    individual rules
 
 test/         unit tests
 scripts/      manual testing
+```
 
 ---
 
