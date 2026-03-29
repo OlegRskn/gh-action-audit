@@ -77,14 +77,14 @@ npm test
 ## Project structure
 
 src/
-cli/ CLI entry point
-github/ GitHub API integration
-parser/ YAML parsing
-analyzer/ security analysis
-rules/ rules
+  cli/        CLI entry point
+  github/     GitHub API integration
+  parser/     YAML parsing
+  analyzer/   security analysis
+    rules/    rules
 
-test/ unit tests
-scripts/ manual testing
+test/         unit tests
+scripts/      manual testing
 
 ---
 
